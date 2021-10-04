@@ -58,13 +58,13 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/categories/notes">随笔</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">CTF相关</a></li>
+				<li><a href="/categories/ctf">CTF相关</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">内网相关</a></li>
+				<li><a href="/categories/IntranetPenetration">内网相关</a></li>
 	        
-				<li><a href="/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">漏洞复现</a></li>
+				<li><a href="/categories/bugs">漏洞复现</a></li>
 	        
 			</ul>
 		</nav>
@@ -90,7 +90,7 @@
 		        
 					<a class="bilibili" target="_blank" href="#" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
-					<a class="mail" target="_blank" href="mailto:MTMxMTA0MzU0ODJAcXEuY29t" title="mail"><i class="icon-mail"></i></a>
+					<a class="mail" target="_blank" href="mailto:13110435482@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 					<a class="twitter" target="_blank" href="https://twitter.com/uuuuuuuuuuuzi" title="twitter"><i class="icon-twitter"></i></a>
 		        
@@ -137,7 +137,7 @@
 			        
 						<a class="bilibili" target="_blank" href="#" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
-						<a class="mail" target="_blank" href="mailto:MTMxMTA0MzU0ODJAcXEuY29t" title="mail"><i class="icon-mail"></i></a>
+						<a class="mail" target="_blank" href="mailto:13110435482@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 						<a class="twitter" target="_blank" href="https://twitter.com/uuuuuuuuuuuzi" title="twitter"><i class="icon-twitter"></i></a>
 			        
@@ -150,13 +150,13 @@
 				
 					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 20%"><a href="/categories/notes">随笔</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/%E9%9A%8F%E7%AC%94/">CTF相关</a></li>
+					<li style="width: 20%"><a href="/categories/ctf">CTF相关</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/%E9%9A%8F%E7%AC%94/">内网相关</a></li>
+					<li style="width: 20%"><a href="/categories/IntranetPenetration">内网相关</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">漏洞复现</a></li>
+					<li style="width: 20%"><a href="/categories/bugs">漏洞复现</a></li>
 		        
 				</ul>
 			</nav>
@@ -172,6 +172,85 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-guizhou" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/04/guizhou/">内网渗透常用命令</a>
+    </h1>
+  
+
+        
+        <a href="/2021/10/04/guizhou/" class="archive-article-date">
+  	<time datetime="2021-10-04T11:17:47.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">tracert IP    //路由跟踪 </span><br><span class="line">route print    //打印路由表 </span><br><span class="line">arp -a          //列出本网段内所有活跃的IP地址 </span><br><span class="line">arp -s (ip + mac) //绑定mac与ip地址 </span><br><span class="line">arp -d (ip + mac) //解绑mac与ip地址 </span><br><span class="line">nbtscan -r 192.168.16.0/24  //通过小工具nbtscan扫描整个网络 </span><br><span class="line">netsh firewall show config    //查看防火墙策略 </span><br><span class="line">netsh firewall show state     //查看防火墙策略</span><br><span class="line">for /l %i in (1,1,255) do @ping 192.168.10.%i -w 1 -n 1 | find /i &quot;ttl&quot; //探测存活主机</span><br><span class="line"></span><br><span class="line">net命令</span><br><span class="line"></span><br><span class="line">net group &quot;Domain Admins&quot; xxx /add /domain #添加到域管</span><br><span class="line">net time /domain</span><br><span class="line">net group &quot;domain admins&quot; /domain</span><br><span class="line">net group &quot;domain controllers&quot; /domain</span><br><span class="line">net user administrator /domain</span><br><span class="line">nltest /domain_trusts  获取域信任关系</span><br><span class="line">nltest /dclist:</span><br><span class="line">net share</span><br><span class="line">net view \\domainip</span><br><span class="line">net view /domain    查看域/工作组列表</span><br><span class="line">net view /domain:secwing    查看secwing域中 计算机列表</span><br><span class="line">net config Workstation  查询机器属于哪个域</span><br><span class="line">netstat -ano |findstr</span><br><span class="line">net accouts 查看本地密码策略</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">set 查看环境变量</span><br><span class="line">nbtstat -A ip   netbiso查询</span><br><span class="line">whoami /all</span><br><span class="line">qwinsta //查看登录情况</span><br><span class="line">query user //查看管理员最近登陆时间</span><br><span class="line">nltest /domain_trusts     //获取域信任信息</span><br><span class="line"></span><br><span class="line">taskkill /f /im </span><br><span class="line">tasklist /svc 查看进程</span><br><span class="line">tasklist /S ip /U domain\username /P /V //查看远程计算机进程列</span><br><span class="line">tracert IP //路由跟踪</span><br><span class="line"></span><br><span class="line">route print //打印路由表</span><br><span class="line">arp -a //列出本网段内所有活跃的IP地址</span><br><span class="line">arp -s （ip + MAC）//绑定mac与ip地址</span><br><span class="line">arp -d （ip + MAC） //解绑mac与ip地址</span><br><span class="line"></span><br><span class="line">reg query &quot;HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default&quot; /ve</span><br><span class="line">获取最近mstsc登录的记录</span><br><span class="line"></span><br><span class="line">setspn -Q \*/\* SPN列表</span><br></pre></td></tr></table></figure>
+
+<h1 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h1>
+        
+          <a class="article-more-a" href="/2021/10/04/guizhou/#more">more >></a>
+        
+      
+
+      
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/IntranetPenetration//" class="article-tag-list-link color5">IntranetPenetration</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/10/04/guizhou/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-New-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -195,16 +274,29 @@
       
         <p>放弃了用了五六年的博客园到新的地方，希望能够在这里开启新的篇章。</p>
 <p>欢迎有兴趣的小伙伴一起学习py</p>
-<p>如果大师傅们有什么项目要合作可联系邮箱：MTMxMTA0MzU0ODJAcXEuY29t</p>
+<p>承接渗透测试、红队评估、系统开发等相关外包项目 -.-</p>
+<p>联系邮箱：<a href="mailto:&#49;&#x33;&#x31;&#49;&#48;&#52;&#51;&#53;&#52;&#x38;&#x32;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#49;&#x33;&#x31;&#49;&#48;&#52;&#51;&#53;&#52;&#x38;&#x32;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a>(微信非此号,切勿添加,直接发邮件即可)</p>
 
       
 
       
+
     </div>
     <div class="article-info article-info-index">
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/daily//" class="article-tag-list-link color1">daily</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -398,7 +490,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">资深废物,安服菜鸡&lt;br/&gt;常年内网迷路者&lt;br/&gt;非知名网络黑客&lt;br/&gt;专业端茶倒水选手&lt;br/&gt;邮箱:MTMxMTA0MzU0ODJAcXEuY29t</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">资深废物,安服菜鸡&lt;br/&gt;常年内网迷路者&lt;br/&gt;非知名网络黑客&lt;br/&gt;专业端茶倒水选手&lt;br/&gt;邮箱:13110435482@qq.com</div>
   	  	
     	</section>
     
