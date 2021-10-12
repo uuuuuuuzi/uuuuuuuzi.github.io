@@ -179,31 +179,30 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-内网渗透常用命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-awd-Defence" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/04/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">内网渗透常用命令</a>
+      <a class="article-title" href="/2021/10/12/awd-Defence/">自由攻防-Defence部分</a>
     </h1>
   
 
         
-        <a href="/2021/10/04/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2021-10-04T11:17:47.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-04</time>
+        <a href="/2021/10/12/awd-Defence/" class="archive-article-date">
+  	<time datetime="2021-10-12T05:06:04.832Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">tracert IP    //路由跟踪 </span><br><span class="line">route print    //打印路由表 </span><br><span class="line">arp -a          //列出本网段内所有活跃的IP地址 </span><br><span class="line">arp -s (ip + mac) //绑定mac与ip地址 </span><br><span class="line">arp -d (ip + mac) //解绑mac与ip地址 </span><br><span class="line">nbtscan -r 192.168.16.0/24  //通过小工具nbtscan扫描整个网络 </span><br><span class="line">netsh firewall show config    //查看防火墙策略 </span><br><span class="line">netsh firewall show state     //查看防火墙策略</span><br><span class="line">for /l %i in (1,1,255) do @ping 192.168.10.%i -w 1 -n 1 | find /i &quot;ttl&quot; //探测存活主机</span><br><span class="line"></span><br><span class="line">net命令</span><br><span class="line"></span><br><span class="line">net group &quot;Domain Admins&quot; xxx /add /domain #添加到域管</span><br><span class="line">net time /domain</span><br><span class="line">net group &quot;domain admins&quot; /domain</span><br><span class="line">net group &quot;domain controllers&quot; /domain</span><br><span class="line">net user administrator /domain</span><br><span class="line">nltest /domain_trusts  获取域信任关系</span><br><span class="line">nltest /dclist:</span><br><span class="line">net share</span><br><span class="line">net view \\domainip</span><br><span class="line">net view /domain    查看域/工作组列表</span><br><span class="line">net view /domain:secwing    查看secwing域中 计算机列表</span><br><span class="line">net config Workstation  查询机器属于哪个域</span><br><span class="line">netstat -ano |findstr</span><br><span class="line">net accouts 查看本地密码策略</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">set 查看环境变量</span><br><span class="line">nbtstat -A ip   netbiso查询</span><br><span class="line">whoami /all</span><br><span class="line">qwinsta //查看登录情况</span><br><span class="line">query user //查看管理员最近登陆时间</span><br><span class="line">nltest /domain_trusts     //获取域信任信息</span><br><span class="line"></span><br><span class="line">taskkill /f /im </span><br><span class="line">tasklist /svc 查看进程</span><br><span class="line">tasklist /S ip /U domain\username /P /V //查看远程计算机进程列</span><br><span class="line">tracert IP //路由跟踪</span><br><span class="line"></span><br><span class="line">route print //打印路由表</span><br><span class="line">arp -a //列出本网段内所有活跃的IP地址</span><br><span class="line">arp -s （ip + MAC）//绑定mac与ip地址</span><br><span class="line">arp -d （ip + MAC） //解绑mac与ip地址</span><br><span class="line"></span><br><span class="line">reg query &quot;HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default&quot; /ve</span><br><span class="line">获取最近mstsc登录的记录</span><br><span class="line"></span><br><span class="line">setspn -Q \*/\* SPN列表</span><br></pre></td></tr></table></figure>
-
-<h1 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h1>
+        <p>客户喊帮忙弄一个防守手册，故有了这篇文章，后续考虑继续完善Attack。</p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>1、<strong>认真阅读比赛手册！！！</strong><br>2、查看SSH的用户名和密码是否相同，如果是弱口令一般情况下都相同，如果很复杂那就不同。<br>3、检查网站登录后是否有FLAG，如果有可以让队友写好相应脚本。</p>
         
-          <a class="article-more-a" href="/2021/10/04/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more">more >></a>
+          <a class="article-more-a" href="/2021/10/12/awd-Defence/#more">more >></a>
         
       
 
@@ -219,7 +218,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/IntranetPenetration//" class="article-tag-list-link color5">IntranetPenetration</a>
+        			<a href="/categories/ctf//" class="article-tag-list-link color4">ctf</a>
         		</li>
       		
 		</ul>
@@ -228,7 +227,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/04/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/10/12/awd-Defence/">展开全文 >></a>
         </p>
       
 

