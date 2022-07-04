@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2021/11 | uuuuuuuuuzi’Blogs</title>
+  <title>IOS 逆向（一） - otool 命令入门 | uuuuuuuuuzi’Blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="uuuuuuuuuzi’blogs 网络安全|WEB安全|渗透测试|攻防培训">
-<meta property="og:type" content="website">
-<meta property="og:title" content="uuuuuuuuuzi’Blogs">
-<meta property="og:url" content="http://example.com/archives/2021/11/index.html">
+  <meta name="description" content="首先可以拿自己的 ipa 包进行尝试。 选择你的 ipa 包，然后把后缀名改为 zip，解压缩得到 Payload 文件夹，里面就是你的 APP。 打开终端，直接 cd 到你的 xxxx.app 目录下。具体做法，输入 cd，然后把 xxxx.app 直接拖到终端里打个回车。 然后输入 1otool">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IOS 逆向（一） - otool 命令入门">
+<meta property="og:url" content="http://example.com/2022/05/09/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%80%EF%BC%89-otool%20%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="uuuuuuuuuzi’Blogs">
-<meta property="og:description" content="uuuuuuuuuzi’blogs 网络安全|WEB安全|渗透测试|攻防培训">
+<meta property="og:description" content="首先可以拿自己的 ipa 包进行尝试。 选择你的 ipa 包，然后把后缀名改为 zip，解压缩得到 Payload 文件夹，里面就是你的 APP。 打开终端，直接 cd 到你的 xxxx.app 目录下。具体做法，输入 cd，然后把 xxxx.app 直接拖到终端里打个回车。 然后输入 1otool">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-05-09T06:45:25.128Z">
+<meta property="article:modified_time" content="2022-07-04T07:29:24.821Z">
 <meta property="article:author" content="uuuuuuuuuzi">
 <meta property="article:tag" content="uuuuuuuuuzi’blogs 网络安全|WEB安全|渗透测试|攻防培训">
 <meta name="twitter:card" content="summary">
@@ -177,60 +179,222 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-IOS逆向（一）-otool 命令入门" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/07/SecurityService/" class="archive-article-date">
-  	<time datetime="2021-11-07T08:52:38.830Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-07</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/07/SecurityService/">私人安全团队-线上渗透测试服务</a>
+    <h1 class="article-title" itemprop="name">
+      IOS 逆向（一） - otool 命令入门
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2022/05/09/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%80%EF%BC%89-otool%20%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/" class="archive-article-date">
+  	<time datetime="2022-05-09T06:45:25.128Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先可以拿自己的 ipa 包进行尝试。</p>
+<p>选择你的 ipa 包，然后把后缀名改为 zip，解压缩得到 Payload 文件夹，里面就是你的 APP。</p>
+<p>打开终端，直接 cd 到你的 xxxx.app 目录下。具体做法，输入 cd，然后把 xxxx.app 直接拖到终端里打个回车。</p>
+<p>然后输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">otool</span><br></pre></td></tr></table></figure>
+<span id="more"></span> 
+<p>会得到</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">Usage: /Applications/Xcode9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/otool [-arch arch_type] [-fahlLDtdorSTMRIHGvVcXmqQjCP] [-mcpu=arg] [--version] &lt;object file&gt; ...</span><br><span class="line">-f print the fat headers</span><br><span class="line">-a print the archive header</span><br><span class="line">-h print the mach header</span><br><span class="line">-l print the load commands</span><br><span class="line">-L print shared libraries used</span><br><span class="line">-D print shared library id name</span><br><span class="line">-t print the text section (disassemble with -v)</span><br><span class="line">-p &lt;routine name&gt;  start dissassemble from routine name</span><br><span class="line">-s &lt;segname&gt; &lt;sectname&gt; print contents of section</span><br><span class="line">-d print the data section</span><br><span class="line">-o print the Objective-C segment</span><br><span class="line">-r print the relocation entries</span><br><span class="line">-S print the table of contents of a library (obsolete)</span><br><span class="line">-T print the table of contents of a dynamic shared library (obsolete)</span><br><span class="line">-M print the module table of a dynamic shared library (obsolete)</span><br><span class="line">-R print the reference table of a dynamic shared library (obsolete)</span><br><span class="line">-I print the indirect symbol table</span><br><span class="line">-H print the two-level hints table (obsolete)</span><br><span class="line">-G print the data in code table</span><br><span class="line">-v print verbosely (symbolically) when possible</span><br><span class="line">-V print disassembled operands symbolically</span><br><span class="line">-c print argument strings of a core file</span><br><span class="line">-X print no leading addresses or headers</span><br><span class="line">-m don&#x27;t use archive(member) syntax</span><br><span class="line">-B force Thumb disassembly (ARM objects only)</span><br><span class="line">-q use llvm&#x27;s disassembler (the default)</span><br><span class="line">-Q use otool(1)&#x27;s disassembler</span><br><span class="line">-mcpu=arg use `arg&#x27; as the cpu for disassembly</span><br><span class="line">-j print opcode bytes</span><br><span class="line">-P print the info plist section as strings</span><br><span class="line">-C print linker optimization hints</span><br><span class="line">--version print the version of /Applications/Xcode9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/otool</span><br></pre></td></tr></table></figure>
+
+<p>有兴趣的同学可以仔细研究一下每个命令是干吗用的，这里介绍几个常用命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">otool -L</span><br></pre></td></tr></table></figure>
+
+<p>可执行文件的名称可以右键 xxxx.app 文件，选择显示包内容，然后找到里面的 exec 文件，把名字打进去。<strong>一般来说这个文件的名字跟 xxxx 是一样的</strong><br>然后奇迹就出现了。。。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth (compatibility version 1.0.0, current version 1.0.0)</span><br><span class="line">/System/Library/Frameworks/CoreData.framework/CoreData (compatibility version 1.0.0, current version 851.0.0)</span><br><span class="line">/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics (compatibility version 64.0.0, current version 1161.21.0)</span><br><span class="line">/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer (compatibility version 1.0.0, current version 1.0.0)</span><br><span class="line">/System/Library/Frameworks/QuartzCore.framework/QuartzCore (compatibility version 1.2.0, current version 1.11.0)</span><br><span class="line">/System/Library/Frameworks/UserNotifications.framework/UserNotifications (compatibility version 1.0.0, current version 1.0.0)</span><br><span class="line">@rpath/libswiftAVFoundation.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftAssetsLibrary.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftCore.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftCoreAudio.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftCoreData.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftCoreFoundation.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftCoreGraphics.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftCoreImage.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftCoreLocation.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftCoreMedia.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftDarwin.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftDispatch.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftFoundation.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftMetal.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftObjectiveC.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftQuartzCore.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftUIKit.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">@rpath/libswiftsimd.dylib (compatibility version 1.0.0, current version 902.0.54)</span><br><span class="line">.............</span><br></pre></td></tr></table></figure>
+
+<p>是不是很熟悉？这个命令列出了你使用的所有库的名字。</p>
+<p>查看 ipa 包是否加壳：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">otool -l 可执行文件 | grep crypt</span><br></pre></td></tr></table></figure>
+
+<p>显示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> cryptoff 16384</span><br><span class="line">cryptsize 6651904</span><br><span class="line">  cryptid 0</span><br><span class="line"> cryptoff 16384</span><br><span class="line">cryptsize 6553600</span><br><span class="line">  cryptid 0</span><br></pre></td></tr></table></figure>
+
+<p>其中 cryptid 代表是否加壳，1 代表加壳，0 代表已脱壳。我们发现打印了两遍，其实代表着该可执行文件支持两种架构 armv7 和 arm64.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">otool -hv filename #地址随机化测试</span><br><span class="line">otool -Iv fielname | grep <span class="string">&quot;chk_guard&quot;</span>#堆栈保护</span><br><span class="line">otool –Iv filename | grep <span class="string">&quot;objc_release&quot;</span>#自动引用计数</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://github.com/MobSF/Mobile-Security-Framework-MobSF">https://github.com/MobSF/Mobile-Security-Framework-MobSF</a></p>
+<h3 id="加壳查验"><a href="#加壳查验" class="headerlink" title="加壳查验"></a>加壳查验</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">otool -l 可执行文件 | grep crypt</span><br></pre></td></tr></table></figure>
+
+<p>其中 cryptid 代表是否加壳，1 代表加壳，0 代表已脱壳。我们发现打印了两遍，其实代表着该可执行文件支持两种架构 armv7 和 arm64.</p>
+<h3 id="查看App所使用的动态库"><a href="#查看App所使用的动态库" class="headerlink" title="查看App所使用的动态库"></a>查看App所使用的动态库</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">otool -L Mach-O文件路径</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>祝老板天天开心<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/daily//" class="article-tag-list-link color1">daily</a>
+        			<a href="/categories/iosTest//" class="article-tag-list-link color3">iosTest</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2022/06/21/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%BA%8C%EF%BC%89-%E7%A0%B8%E5%A3%B3%E6%96%B9%E6%A1%88/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          IOS 逆向（二） - iOS砸壳方案
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2021/10/24/Mysql_Jdbc_Unserialize/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mysql Jdbc反序列化漏洞</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E5%A3%B3%E6%9F%A5%E9%AA%8C"><span class="toc-number">1.</span> <span class="toc-text">加壳查验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8BApp%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93"><span class="toc-number">2.</span> <span class="toc-text">查看App所使用的动态库</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
   
 
-    
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -240,7 +404,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 uuuuuuuuuzi
+    		&copy; 2022 uuuuuuuuuzi
     	</div>
       	<div class="footer-right">
       		
@@ -253,8 +417,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -179,31 +179,33 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-SecurityService" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-IOS逆向（三）-libimobiledevice的简介和使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/11/07/SecurityService/">私人安全团队-线上渗透测试服务</a>
+      <a class="article-title" href="/2022/06/22/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%89%EF%BC%89-libimobiledevice%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/">IOS 逆向（三） - libimobiledevice的简介和使用</a>
     </h1>
   
 
         
-        <a href="/2021/11/07/SecurityService/" class="archive-article-date">
-  	<time datetime="2021-11-07T08:52:38.830Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-07</time>
+        <a href="/2022/06/22/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%89%EF%BC%89-libimobiledevice%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+  	<time datetime="2022-06-22T08:18:51.522Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>业务系统想要做渗透测试但是专业的安全厂家费用又太贵，无从下手？那么！联系我们，直接对接技术专家，专业的安全攻防团队为你量身定制渗透测试服务！</p>
+        <h3 id="什么是libimobiledevice？"><a href="#什么是libimobiledevice？" class="headerlink" title="什么是libimobiledevice？"></a>什么是libimobiledevice？</h3><blockquote>
+<p> 一个与Apple iOS设备进行本地通信的库。</p>
+<p>libimobiledevice是一个跨平台的软件库，用于支持iPhone、iPod Touch、iPad和Apple TV设备的协议。它不依赖于使用任何现有的专有库，不需要越狱。它允许其他软件轻松访问设备的文件系统，检索有关设备及其内部设备的信息，备份/恢复设备，管理跳板图标，管理已安装的应用程序，检索地址簿/日历/笔记和书签，以及（使用LIGBGOD）同步音乐和视频到设备。</p>
+<p>官方网站：<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://www.libimobiledevice.org">http://www.libimobiledevice.org</a><br> github地址：<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://github.com/libimobiledevice">https://github.com/libimobiledevice</a></p>
 </blockquote>
         
-          <a class="article-more-a" href="/2021/11/07/SecurityService/#more">more >></a>
+          <a class="article-more-a" href="/2022/06/22/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%89%EF%BC%89-libimobiledevice%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/#more">more >></a>
         
       
 
@@ -212,11 +214,6 @@
     </div>
     <div class="article-info article-info-index">
       
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
-      
       
       
 	<div class="article-category tagcloud">
@@ -224,7 +221,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/daily//" class="article-tag-list-link color1">daily</a>
+        			<a href="/categories/iosTest//" class="article-tag-list-link color3">iosTest</a>
         		</li>
       		
 		</ul>
@@ -233,7 +230,172 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/11/07/SecurityService/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/06/22/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%89%EF%BC%89-libimobiledevice%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-IOS逆向（二）-砸壳方案" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/06/21/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%BA%8C%EF%BC%89-%E7%A0%B8%E5%A3%B3%E6%96%B9%E6%A1%88/">IOS 逆向（二） - iOS砸壳方案</a>
+    </h1>
+  
+
+        
+        <a href="/2022/06/21/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%BA%8C%EF%BC%89-%E7%A0%B8%E5%A3%B3%E6%96%B9%E6%A1%88/" class="archive-article-date">
+  	<time datetime="2022-06-21T04:42:39.994Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>查看Mach-O是否进行加密可以用命令查看：<br> 以微信为例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">otool - l WeChat | grey cryptid</span><br><span class="line">最终看到的cryptid字段1表示了加密，0表示了解密。命令中的WeChat字段是ipa包里的二进制文件名。</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-Clutch"><a href="#1-Clutch" class="headerlink" title="1.Clutch"></a>1.<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://github.com/KJCracks/Clutch">Clutch</a></h3><p>Clutch是由KJCracks开发的一款开源砸壳工具。工具支持iPhone、iPod Touch、iPad，该工具需要使用iOS8.0以上的越狱手机应用。</p>
+<p>使用方法</p>
+<ul>
+<li>先把clutch文件拷贝到越狱手机里，</li>
+</ul>
+        
+          <a class="article-more-a" href="/2022/06/21/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%BA%8C%EF%BC%89-%E7%A0%B8%E5%A3%B3%E6%96%B9%E6%A1%88/#more">more >></a>
+        
+      
+
+      
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/iosTest//" class="article-tag-list-link color3">iosTest</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/06/21/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%BA%8C%EF%BC%89-%E7%A0%B8%E5%A3%B3%E6%96%B9%E6%A1%88/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-IOS逆向（一）-otool 命令入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/05/09/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%80%EF%BC%89-otool%20%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/">IOS 逆向（一） - otool 命令入门</a>
+    </h1>
+  
+
+        
+        <a href="/2022/05/09/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%80%EF%BC%89-otool%20%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/" class="archive-article-date">
+  	<time datetime="2022-05-09T06:45:25.128Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先可以拿自己的 ipa 包进行尝试。</p>
+<p>选择你的 ipa 包，然后把后缀名改为 zip，解压缩得到 Payload 文件夹，里面就是你的 APP。</p>
+<p>打开终端，直接 cd 到你的 xxxx.app 目录下。具体做法，输入 cd，然后把 xxxx.app 直接拖到终端里打个回车。</p>
+<p>然后输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">otool</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2022/05/09/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%80%EF%BC%89-otool%20%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/#more">more >></a>
+        
+      
+
+      
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/iosTest//" class="article-tag-list-link color3">iosTest</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/05/09/IOS%E9%80%86%E5%90%91%EF%BC%88%E4%B8%80%EF%BC%89-otool%20%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/">展开全文 >></a>
         </p>
       
 
@@ -304,7 +466,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/PenetrationTest//" class="article-tag-list-link color1">PenetrationTest</a>
+        			<a href="/categories/PententTest//" class="article-tag-list-link color2">PententTest</a>
         		</li>
       		
 		</ul>
@@ -431,7 +593,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 uuuuuuuuuzi
+    		&copy; 2022 uuuuuuuuuzi
     	</div>
       	<div class="footer-right">
       		
